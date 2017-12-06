@@ -6,9 +6,7 @@ const action = { type: 'REMOVE_TODO' }
 */
 
 //Action Generators
-const id = 0
-function generateAddToDoAction(note) {
-  id++
+function generateAddToDoAction(id, note) {
   return {
     type: 'ADD_TODO',
     note: note,
